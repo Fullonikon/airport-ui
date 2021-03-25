@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {Component} from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -7,14 +7,7 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'airport';
 
-  constructor(private http: HttpClient) { }
-
-  get() {
-    console.log("Xyi");
-    this.http.get('http://localhost:8081/')
-      .subscribe(s => console.log(s));
-  }
+  constructor() { }
 
 }

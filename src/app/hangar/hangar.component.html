@@ -1,0 +1,47 @@
+
+<div style="height: 20px">
+  <input placeholder="type" #type/>
+  <input placeholder="capacity" #capacity/>
+  <input placeholder="flightRange" #flightRange/>
+  <input placeholder="model" #model/>
+  <input placeholder="Tail Number" type="number" #tailNumber/>
+  <button (click)="saveTransport({
+   type: type.value,
+   capacity: capacity.value,
+   flightRange: flightRange.value,
+   model: model.value,
+   tailNumber: tailNumber.value,
+   spaceLeft: capacity.value
+   })">SaveTransport</button>
+</div>
+
+<div style="height: 20px">
+  <input placeholder="employeeId" type="number" #employeeId/>
+  <input placeholder="firstName" #firstName/>
+  <input placeholder="lastName" #lastName/>
+  <input placeholder="category" #category/>
+  <button (click)="savePilot( {
+  employeeId: employeeId.value,
+  firstName: firstName.value,
+  lastName: lastName.value,
+  category: category.value
+  })">SavePilot</button>
+</div>
+
+<div style="height: 20px">
+  <input placeholder="hangarId" type="number" #hangarId/>
+  <input placeholder="color" #color/>
+  <input placeholder="type" #hangarType/>
+  <button (click)="saveHangar( {
+  hangarId: hangarId.value,
+  empty: true,
+  color: color.value,
+  hangarType: hangarType.value
+  })">SaveHangar</button>
+</div>
+
+<a href="transport">Транспорт</a>
+
+
+
+
